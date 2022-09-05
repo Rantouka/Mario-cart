@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sky {
+  width: 100vw;
+  height: 300px;
+  background-color: lightblue;
+}
+
+.floor {
+  width: 100vw;
+  height: 150px;
+  background-color: rgb(66, 148, 66);
+}
+.road {
+  width: 100vw;
+  height: 200px;
+  background-color: rgb(73, 72, 72);
+  border-top: 10px solid gray;
+  border-bottom: 10px solid gray;
+}
+.line {
+  width: 100vw;
+  height: 20px;
+  border-top: 5px dashed white;
+}
+.kart {
+  animation: mario 3s ease-in infinite alternate forwards;
+  width: 0%;
+  position: relative;
+}
+
+.m {
+  position: relative;
+}
+
+@keyframes mario {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 90%;
+  }
+}
